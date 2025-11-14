@@ -1,7 +1,60 @@
+/* --- Grundlegende Stile (Wiederherstellung) --- */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e5d7cf; /* Hintergrundfarbe */
+    color: #4e342e; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* WICHTIG: Alles zentrieren */
+}
 
-/* ... (vorhandener Code) ... */
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding-top: 10px;
+    font-size: 1.6em;
+}
 
-/* Stil für die Übersicht (z.B. die 16 Kompartimente) */
+header {
+    background-color: #916341; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* --- Navigations-Buttons (Wiederherstellung) --- */
+.nav-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #b5886d; 
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 15px; /* Abstand zwischen den Buttons */
+    border: 1px solid #4e342e;
+}
+
+.nav-button:hover {
+    background-color: #916341; 
+}
+
+/* --- Bild auf der Titelseite --- */
+.chorgestuehl-foto {
+    max-width: 900px; 
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    border: 3px solid #4e342e;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Nord-Übersicht (Für Kompaktheit und Ästhetik) --- */
 .kompartiment-list {
     max-width: 800px;
     margin: 0 auto;
@@ -10,14 +63,37 @@
 }
 
 .kompartiment-header {
-    border-bottom: 2px solid #916341; /* Trennlinie nur unter der Kompartiment-Nummer */
+    font-size: 1.4em; /* Überschrift Kompartiment N1, N2 etc. */
     margin-top: 20px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #916341; /* Trennlinie nur unter der Kompartiment-Nummer */
+    padding-bottom: 3px;
+}
+
+.relief-link-container {
+    display: flex; /* Flexbox für eine ansprechende Anordnung */
+    flex-wrap: wrap; /* Falls nicht alles in eine Zeile passt */
+    gap: 15px; /* Abstand zwischen den Links */
+    margin-bottom: 10px;
 }
 
 .kompartiment-item {
-    padding: 3px 0; /* Weniger Abstand */
-    border-bottom: none; /* WICHTIG: Keine Linie zwischen A, B, C */
+    padding: 2px 0;
+    line-height: 1.3;
 }
 
-/* ... (vorhandener Code) ... */
+.kompartiment-item a {
+    text-decoration: none;
+    font-size: 1.0em; 
+    display: inline-block; /* Wichtig: Links bleiben kompakt und nicht über die ganze Seite */
+    padding: 5px 10px;
+    border: 1px solid #b5886d;
+    background-color: #f0ebe8;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.kompartiment-item a:hover {
+    background-color: #d8c7c0;
+    color: #4e342e;
+}
