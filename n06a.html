@@ -16,6 +16,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             text-align: left; 
         }
+        /* NEU: CSS-Klasse für das große, skalierte Bild */
+        .full-relief-image {
+            max-width: 100%; /* Begrenzt die Bildbreite auf 100% des verfügbaren Raums */
+            height: auto;    /* Behält das Seitenverhältnis bei */
+            display: block;  /* Entfernt unnötige Leerzeichen unter dem Bild */
+        }
     </style>
 </head>
 <body>
@@ -28,16 +34,12 @@
         
         <a href="nord.html" class="zurueck-link">← Zurück zur Nordflügel-Übersicht</a>
 
-        <div style="text-align: center;">
-            <a href="https://commons.wikimedia.org/wiki/File:CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-25_1.tif" target="_blank">
-                <img class="relief-image" 
-                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-25_1.tif/lossy-page1-500px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-25_1.tif.jpg" 
-                     alt="Josef wird vom Engel zur Flucht ermahnt - Zum Vergrössern anklicken">
-            </a>
+        <div style="text-align: center; margin-top: 20px;">
+            <img class="full-relief-image" 
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-25_1.tif/lossy-page1-5400px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-25_1.tif.jpg" 
+                 alt="Josef wird vom Engel zur Flucht ermahnt">
             
-            <a class="text-link" href="https://commons.wikimedia.org/wiki/File:CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-25_1.tif" target="_blank">
-                Zum Vollbild mit Zoom-Funktion
-            </a>
+            <p style="margin-top: 10px; font-style: italic;">Das Relief wird in voller Auflösung dargestellt.</p>
         </div>
         
     </div>
