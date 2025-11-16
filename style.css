@@ -185,3 +185,10 @@ header {
     display: block;
     margin-bottom: 15px;
 }
+/* Styling für die zusätzliche Erläuterung unter dem Titel (z.B. N7B) */
+.detail-subtitle {
+    color: white; /* Schriftfarbe Weiss */
+    font-size: 0.9em; /* Etwas kleinere Schrift */
+    margin-top: -10px; /* Rücken etwas näher an den Haupttitel */
+    margin-bottom: 20px;
+}
