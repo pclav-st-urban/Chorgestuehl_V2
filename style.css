@@ -192,3 +192,28 @@ header {
     margin-top: -10px; /* Rücken etwas näher an den Haupttitel */
     margin-bottom: 20px;
 }
+/* Zusätzliche Stile für zwei Hauptbilder */
+.main-image-container {
+    text-align: center; /* Zentriert den Titel und das Bild */
+    margin-bottom: 40px; /* Abstand zwischen den beiden Bildblöcken */
+    padding: 20px;
+    background-color: #b5886d; /* Hintergrundfarbe des Content-Box */
+    border: 3px solid #4e342e; /* Rand der Content-Box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Schatten */
+}
+
+.main-image-container h3 {
+    color: #4e342e; /* Farbe des Titels (Nordflügel/Südflügel) */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.main-image {
+    max-width: 100%; /* Macht das Bild responsiv */
+    height: auto;
+    border: 2px solid #4e342e; /* Rahmen um das Bild */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leichter Schatten für das Bild */
+    display: block; /* Stellt sicher, dass das Bild einen eigenen Block einnimmt */
+    margin: 0 auto 15px auto; /* Zentriert das Bild und gibt etwas Abstand nach unten */
+}
