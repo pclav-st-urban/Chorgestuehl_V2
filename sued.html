@@ -4,38 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chorgestühl Süd - Übersicht</title>
-    <link rel="stylesheet" href="style.css">
-<style>
-/* 1. LÖST DEN PROBLEMATISCHEN LINKSEINZUG (1.25 cm) UND VERTIKALEN ABSTAND */
+    <link rel="stylesheet" href="style.css"><style>
+/* 1. Löst den problematischen Linkseinzug (bleibt, wird aber fixiert) und vertikalen Abstand */
 .content-area, main {
-    padding: 0 !important;
     margin: 0 !important;
+    padding: 0 !important;
 }
 
-/* 2. LÖST DEN INKONSISTENTEN HORIZONTALEN ABSTAND (eng zwischen Spalte 3/4) */
+/* 2. ERZWINGT DIE BREITENREDUZIERUNG DER SCHALTFLÄCHEN */
+/* Wir machen die Items flexibler und geben ihnen eine kleinere Mindestbreite */
+.relief-link-container .kompartiment-item {
+    /* Die Schaltflächen (a-Tag) müssen kleiner werden */
+    flex-basis: 22%; /* Gibt jedem Item eine Basis von 22% */
+    max-width: 24%; /* Stellt sicher, dass nicht mehr als 4 passen */
+}
+
+/* 3. FIXIERT DEN INKONSISTENTEN ABSTAND UND DEN HÄSSLICHEN UMBRUCH DER ZWEITEN ZEILE */
 .relief-link-container {
     gap: 3px !important; /* Erzwingt den kompakten 3mm Abstand konsistent */
-    margin-bottom: 5px !important; /* Reduziert den vertikalen Abstand */
-    padding-left: 10px; /* Fügt einen kleinen Einzug für die gesamte Zeile hinzu (falls nötig) */
+    margin-bottom: 5px !important;
+    padding-left: 15px; /* Fügt den fehlenden 1,5 cm Einzug der gesamten Zeile hinzu, um den unsauberen Umbruch zu verdecken */
 }
 
-/* 3. LÖST DAS PROBLEM DER FÜNFTEN SPALTE (S16) */
-.relief-link-container:has(div:nth-child(5)) {
-    /* Spezielle Regel für S16: Wenn 5 Items vorhanden, dann... */
-    display: flex; /* Stellt sicher, dass Flex-Layout aktiv bleibt */
-}
-
-/* Alle Items werden flexibel gemacht, um 4 oder 5 in eine Reihe zu quetschen */
-.relief-link-container .kompartiment-item {
-    flex-grow: 1; /* Lässt alle Items gleichmäßig Platz einnehmen */
-    min-width: 15%; /* Gibt den Items eine Mindestbreite */
-    max-width: 25%;
-    height: auto;
-}
-
-/* Fixiert den Fehler, dass die 5. Spalte ohne Einzug beginnt */
-.relief-link-container:has(div:nth-child(5)) .kompartiment-item:last-child {
-    margin-left: 0; /* Stellt sicher, dass die neue Zeile korrekt startet */
+/* 4. Löst das Problem der 5. Spalte (S16) */
+.relief-link-container:has(div:nth-child(5)) .kompartiment-item {
+    /* Wenn 5 Items vorhanden sind, müssen sie noch kleiner sein */
+    flex-basis: 18% !important; 
+    max-width: 19% !important;
 }
 </style>
 </head>
