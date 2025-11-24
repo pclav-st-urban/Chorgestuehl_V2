@@ -87,8 +87,8 @@ header {
 .kompartiment-item {
     padding: 2px 0;
     line-height: 1.3;    
-    /* NEUE REGEL HINZUFÜGEN, UM DIE BREITE ZU FIXIEREN */
-    width: calc(25% - 12px); 
+    /* REDUZIEREN SIE DEN WERT VON 12px AUF 14px ODER 15px */
+    width: calc(25% - 15px);
 }
 .kompartiment-item a {
     text-decoration: none;
