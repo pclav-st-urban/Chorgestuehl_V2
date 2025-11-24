@@ -70,8 +70,8 @@ header {
 }
 
 .kompartiment-header {
-    font-size: 1.4em; 
-    margin-top: 20px;
+    font-size: 1.2em; 
+    margin-top: 10px;
     margin-bottom: 5px;
     margin-left: 0; /* stellt sicher, dass der Titel links beginnt */
     border-bottom: 2px solid #916341; 
@@ -89,17 +89,7 @@ header {
     line-height: 1.3;
     width: calc(25% - 25px);
 }
-.kompartiment-item a {
-    text-decoration: none;
-    font-size: 1.0em; 
-    display: inline-block;
-    padding: 5px 10px;
-    border: 1px solid #b5886d;
-    background-color: #f0ebe8;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
+.kompartiment-item a { /* Das 'a' ist der Link im Item */ display: block; text-decoration: none; color: white; background-color: #6d4c41; /* Braune Füllung */ border: 1px solid #4e342e; /* Dunklerer Rahmen */ padding: 5px 5px; border-radius: 3px; }
 .kompartiment-item a:hover {
     background-color: #d8c7c0;
     color: #4e342e;
