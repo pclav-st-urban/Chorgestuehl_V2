@@ -4,33 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chorgestühl Süd - Übersicht</title>
-    <link rel="stylesheet" href="style.css"><style>
-/* 1. Löst den problematischen Linkseinzug (bleibt, wird aber fixiert) und vertikalen Abstand */
-.content-area, main {
+    <link rel="stylesheet" href="style.css">
+<style>
+/* 1. Löst vertikale Abstände und Linkseinzug */
+.sued-korrektur .relief-link-container {
+    gap: 3px !important; 
+    padding: 0 !important; 
     margin: 0 !important;
-    padding: 0 !important;
 }
 
-/* 2. ERZWINGT DIE BREITENREDUZIERUNG DER SCHALTFLÄCHEN */
-/* Wir machen die Items flexibler und geben ihnen eine kleinere Mindestbreite */
-.relief-link-container .kompartiment-item {
-    /* Die Schaltflächen (a-Tag) müssen kleiner werden */
-    flex-basis: 22%; /* Gibt jedem Item eine Basis von 22% */
-    max-width: 24%; /* Stellt sicher, dass nicht mehr als 4 passen */
+.sued-korrektur .kompartiment-header {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
 }
 
-/* 3. FIXIERT DEN INKONSISTENTEN ABSTAND UND DEN HÄSSLICHEN UMBRUCH DER ZWEITEN ZEILE */
-.relief-link-container {
-    gap: 3px !important; /* Erzwingt den kompakten 3mm Abstand konsistent */
-    margin-bottom: 5px !important;
-    padding-left: 15px; /* Fügt den fehlenden 1,5 cm Einzug der gesamten Zeile hinzu, um den unsauberen Umbruch zu verdecken */
-}
-
-/* 4. Löst das Problem der 5. Spalte (S16) */
-.relief-link-container:has(div:nth-child(5)) .kompartiment-item {
-    /* Wenn 5 Items vorhanden sind, müssen sie noch kleiner sein */
-    flex-basis: 18% !important; 
-    max-width: 19% !important;
+/* 2. Löst das Problem der 5. Spalte (S16) */
+.sued-korrektur .relief-link-container:has(div:nth-child(5)) .kompartiment-item a {
+    /* Wenn 5 Items in S16 vorhanden sind, müssen sie auf 1/5 = 20% Platz haben */
+    width: 19% !important; 
 }
 </style>
 </head>
@@ -38,7 +29,7 @@
     <header>
         <h1>Südflügel - Kompartiment-Übersicht</h1>
     </header>
-        <div class="kompartiment-list">
+        <div class="kompartiment-list sued-korrektur">
       
         <p><a href="index.html" style="font-weight: bold;">← Zurück zur Auswahl</a></p>
         

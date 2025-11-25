@@ -89,12 +89,20 @@ header {
     line-height: 1.3;
     width: calc(25% - 25px);
 }
-.kompartiment-item a { /* Das 'a' ist der Link im Item */ display: block; text-decoration: none; color: white; background-color: #6d4c41; /* Braune Füllung */ border: 1px solid #4e342e; /* Dunklerer Rahmen */ padding: 5px 5px; border-radius: 3px; }
-.kompartiment-item a:hover {
-    background-color: #d8c7c0;
-    color: #4e342e;
+/* Ersetzen Sie den Block .kompartiment-item a in style.css */
+.kompartiment-item a { 
+    display: block;
+    text-decoration: none;
+    color: white; 
+    background-color: #6d4c41; 
+    border: 1px solid #4e342e; 
+    padding: 5px 5px; 
+    border-radius: 3px;
+    
+    /* NEUE REGEL: Beschränkt die Schaltfläche auf etwa 1/4 der Breite */
+    width: 22%; 
+    min-width: 120px; /* Stellt sicher, dass die Schaltfläche nicht zu klein wird */
 }
-
 
 /* ==================================== */
 /* === STILE RELIEF-SEITEN (N01A, N01B, etc.) === */
