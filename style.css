@@ -248,3 +248,62 @@ body img {
     display: block;
     margin: 0 auto;
 }
+/* --- APOSTEL GALERIE (apostel.html) --- */
+
+/* Hauptcontainer für die Apostel-Seite */
+.apostel-main {
+    max-width: 900px;
+    margin: 0 auto; /* Zentriert die Seite auf dem Desktop */
+    padding: 20px;
+}
+
+/* Stil für die Erläuterung */
+.apostel-main .erlaeuterung-text {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/* Stil für die Überschriften */
+.apostel-header {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid #6d4c41;
+}
+
+/* Stil für die Galerie (der 8 Bilder) */
+.apostel-galerie {
+    display: flex;
+    flex-wrap: wrap; /* Wichtig für mobiles Umbrechen */
+    justify-content: center; /* Zentriert die Reihen */
+    gap: 20px; /* Abstand zwischen den Bildern */
+}
+
+/* Stil für jedes einzelne Bild-Element (Einzelfiguren in 2 Spalten) */
+.figur-item {
+    /* calc(50% - 10px) = 2 Spalten + 20px Gap */
+    flex-basis: calc(50% - 10px); 
+    max-width: 400px; /* Sorgt für eine schöne Lesbarkeit auf grossen Bildschirmen */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Stil für das Bild selbst (zwingt alle Bilder zur gleichen Breite innerhalb des Containers) */
+.figur-item img {
+    width: 100%; /* Zwingt alle Bilder, 100% der 50% Spalte einzunehmen */
+    height: auto; /* Erhält die Proportionen */
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* SPEZIELLE KLASSE: Stellt sicher, dass die Gesamtansicht (volle-breite) immer 100% einnimmt */
+.figur-item.volle-breite {
+    flex-basis: 100%; /* Nimmt die gesamte Breite der Galerie ein */
+    max-width: 100%; /* Wichtig, damit das Bild die ganze Breite nutzt */
+    margin-bottom: 30px; /* Fügt einen grösseren Abstand nach dem Gesamtbild hinzu */
+}
+
+/* Stellt sicher, dass das Bild im volle-breite Container auch 100% nutzt */
+.figur-item.volle-breite img {
+    width: 100%;
+}
