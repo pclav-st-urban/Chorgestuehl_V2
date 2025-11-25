@@ -238,3 +238,13 @@ body img {
     margin-left: 0 !important; 
     padding-left: 0 !important;
 }
+/* Zentriert alle Bilder auf der Detailseite, indem der Container zentriert wird */
+.content-box div {
+    text-align: center; /* Zentriert inline-Elemente wie Bilder */
+}
+
+/* Zentriert das Bild selbst, falls es ein Block-Element ist */
+.relief-image {
+    display: block;
+    margin: 0 auto;
+}
