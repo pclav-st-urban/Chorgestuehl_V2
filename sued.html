@@ -6,36 +6,22 @@
     <title>Chorgestühl Süd - Übersicht</title>
     <link rel="stylesheet" href="style.css">
 <style>
-/* 1. KORREKTUR: Erzwingt Linksbündigkeit und entfernt vertikale Abstände */
+/* 1. ZENTRIERUNG und Einzugsprobleme beheben */
 .sued-korrektur {
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0 auto !important; /* Zentriert die Tabelle wieder auf dem Desktop */
+    max-width: 950px; /* Optional: Maximale Breite für bessere Darstellung */
+}
+
+/* 2. S16 KORREKTUR: 5 Spalten zwingen */
+.sued-korrektur .relief-link-container:has(div:nth-child(5)) .kompartiment-item {
+    /* Exakte Berechnung für 5 Spalten bei 15px Gap */
+    width: calc(20% - 12px) !important;
 }
 
 .sued-korrektur .kompartiment-header {
     margin-left: 0 !important;
     padding-left: 0 !important;
 }
-
-/* 2. KORREKTUR: Zwingt die 4. Spalte in die erste Zeile, indem der Abstand minimiert wird */
-.sued-korrektur .relief-link-container {
-    display: flex; /* Stellt sicher, dass das Flex-Layout funktioniert */
-    flex-wrap: wrap; 
-    gap: 0px !important; /* Setzt den Abstand ZWISCHEN den Spalten auf 0 */
-    margin-bottom: 5px !important;
-    padding-left: 10px; /* Fügt den gewünschten Einzug zur ersten Zeile hinzu */
-}
-
-/* 3. KORREKTUR: Stellt sicher, dass die 5. Spalte (S16) richtig angezeigt wird */
-.sued-korrektur .relief-link-container:has(div:nth-child(5)) .kompartiment-item a {
-    width: 19% !important; /* Macht die 5 Schaltflächen noch schmaler */
-}
-
-/* 4. VERMEIDET RIESIGE LÜCKEN NACH DEM UMBRUCH */
-.sued-korrektur .kompartiment-item {
-    padding-right: 3px !important; /* Fügt einen kleinen Puffer hinzu, damit die Spalten nicht aneinanderkleben */
-}
-
 </style>
 </head>
 <body>

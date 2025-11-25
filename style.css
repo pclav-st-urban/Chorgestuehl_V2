@@ -77,19 +77,20 @@ header {
     border-bottom: 2px solid #916341; 
     padding-bottom: 3px;
 }
-
 .relief-link-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 10px;
+    gap: 15px; /* Gewünschter Abstand von 1.5 cm */
+    margin-bottom: 15px; /* Vertikaler Abstand auf 1.5 cm gesetzt */
+    padding-left: 0; /* Entfernt unerwünschte Einzüge */
 }
 .kompartiment-item {
+    box-sizing: border-box; /* WICHTIG: Stellt sicher, dass Padding nicht die Breite erhöht */
+    width: calc(25% - 11.25px); /* Präzise Berechnung für 4 Spalten bei 15px Gap */
     padding: 2px 0;
     line-height: 1.3;
-    width: calc(25% - 25px);
 }
-/* Ersetzen Sie den Block .kompartiment-item a in style.css */
+/* FINALER CODE: .kompartiment-item a in style.css */
 .kompartiment-item a { 
     display: block;
     text-decoration: none;
@@ -99,11 +100,10 @@ header {
     padding: 5px 5px; 
     border-radius: 3px;
     
-    /* NEUE REGEL: Beschränkt die Schaltfläche auf etwa 1/4 der Breite */
+    /* WICHTIG: Begrenzt die Breite auf einen vernünftigen Wert */
     width: 22%; 
-    min-width: 120px; /* Stellt sicher, dass die Schaltfläche nicht zu klein wird */
+    min-width: 120px;
 }
-
 /* ==================================== */
 /* === STILE RELIEF-SEITEN (N01A, N01B, etc.) === */
 /* ==================================== */
