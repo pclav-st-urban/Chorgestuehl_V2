@@ -84,13 +84,21 @@ header {
     margin-bottom: 15px; /* Vertikaler Abstand auf 1.5 cm gesetzt */
     padding-left: 0; /* Entfernt unerwünschte Einzüge */
 }
+/* FINALER CODE: .kompartiment-item in style.css */
 .kompartiment-item {
-    box-sizing: border-box; /* WICHTIG: Stellt sicher, dass Padding nicht die Breite erhöht */
-    width: calc(25% - 11.25px); /* Präzise Berechnung für 4 Spalten bei 15px Gap */
+    box-sizing: border-box; /* Beibehalten */
+    flex-grow: 1; /* Lässt das Element wachsen, wenn Platz ist */
+    flex-shrink: 1; /* Lässt das Element schrumpfen, wenn wenig Platz ist */
+    
+    /* NEUE BREITE: Basiert auf 3 Spalten, mit Berücksichtigung des 15px Abstands */
+    width: calc(33.333% - 10px); 
+    
+    /* MINDESTBREITE: Erzwingt den Umbruch auf dem Handy/iPad, verhindert Überlappung */
+    min-width: 150px; 
+    
     padding: 2px 0;
     line-height: 1.3;
 }
-/* FINALER CODE: .kompartiment-item a in style.css */
 .kompartiment-item a { 
     display: block;
     text-decoration: none;
@@ -221,4 +229,12 @@ body img {
     max-width: 100%;
     /* Stellt sicher, dass die Höhe proportional angepasst wird */
     height: auto; 
+}
+/* Erzwungene Grössenanpassung für Vollbilder auf Tablets/Handys */
+body img {
+    max-width: 100% !important; /* MUSS alle anderen Breiten überschreiben */
+    height: auto !important;
+    /* optional zur Sicherheit: */
+    margin-left: 0 !important; 
+    padding-left: 0 !important;
 }
