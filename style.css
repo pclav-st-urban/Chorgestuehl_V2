@@ -215,3 +215,10 @@ header {
     display: block; /* Stellt sicher, dass das Bild einen eigenen Block einnimmt */
     margin: 0 auto 15px auto; /* Zentriert das Bild und gibt etwas Abstand nach unten */
 }
+/* Stellt sicher, dass das Vollbild beim Anklicken auf Handys/iPads verkleinert wird */
+body img {
+    /* Setzt die maximale Breite des Bildes auf 100% des verfügbaren Raumes */
+    max-width: 100%;
+    /* Stellt sicher, dass die Höhe proportional angepasst wird */
+    height: auto; 
+}
