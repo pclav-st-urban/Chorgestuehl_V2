@@ -267,3 +267,9 @@ body img {
     font-style: italic;
     color: #4e342e; /* Dunklerer Text, passend zum braunen Thema */
 }
+.main-image-container {
+    /* Fügt die Zentrierung des Inhalts hinzu: */
+    text-align: center;
+    /* Optional: stellt sicher, dass der Container selbst mittig ist (falls nötig) */
+    margin: 0 auto; 
+}
