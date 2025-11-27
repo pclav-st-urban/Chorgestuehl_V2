@@ -285,3 +285,9 @@ body img {
     display: block; /* MUSS block sein */
     margin: 0 auto 15px auto; /* ZENTRIERUNG DES BILDES SELBST */
 }
+/* --- FIX: Zentriert das anklickbare Bild (Thumbnail) --- */
+/* Richtet den Link (<a>) innerhalb des Containers (.main-image-container) aus */
+.main-image-container a {
+    /* Macht den Link zu einem Inline-Block, damit er zentriert werden kann */
+    display: inline-block; 
+}
