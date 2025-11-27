@@ -227,7 +227,7 @@ header h2 {
     height: auto;
     border: 2px solid #4e342e; /* Rahmen um das Bild */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Leichter Schatten für das Bild */
-    display: block; /* Stellt sicher, dass das Bild einen eigenen Block einnimmt */
+    display: block;/* MUSS Block sein */
     margin: 0 auto 15px auto; /* Zentriert das Bild und gibt etwas Abstand nach unten */
 }
 /* Stellt sicher, dass das Vollbild beim Anklicken auf Handys/iPads verkleinert wird */
