@@ -255,3 +255,15 @@ body img {
     display: block;
     margin: 0 auto;
 }
+/* Stil für den erklärenden Textblock zwischen den Kacheln */
+.separator-text-block {
+    width: 100%; /* Wichtig: Sorgt dafür, dass der Text die gesamte Breite der Container einnimmt */
+    text-align: center;
+    margin: 30px 0; /* Fügt einen vertikalen Abstand oben und unten hinzu */
+    padding: 10px 20px;
+    box-sizing: border-box;
+    /* Optionale Stile für die Ästhetik */
+    font-size: 1.1em;
+    font-style: italic;
+    color: #4e342e; /* Dunklerer Text, passend zum braunen Thema */
+}
