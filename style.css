@@ -205,14 +205,14 @@ header h2 {
     margin-top: -10px; /* Rücken etwas näher an den Haupttitel */
     margin-bottom: 20px;
 }
-/* Zusätzliche Stile für zwei Hauptbilder */
 .main-image-container {
-    text-align: center; /* Zentriert den Titel und das Bild */
-    margin-bottom: 40px; /* Abstand zwischen den beiden Bildblöcken */
+    text-align: center; !important; /* <--- ZENTRIERUNG ZWINGEN */
+    margin-bottom: 40px; 
     padding: 20px;
     background-color: #b5886d; /* Hintergrundfarbe des Content-Box */
     border: 3px solid #4e342e; /* Rand der Content-Box */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Schatten */
+    margin: 0 auto; /* Hilft bei der Zentrierung des Containers selbst */
 }
 
 .main-image-container h3 {
