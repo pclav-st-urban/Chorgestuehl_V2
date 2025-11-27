@@ -289,5 +289,16 @@ body img {
     max-width: 450px; /* <--- NEU: Container auf realistische Grösse begrenzen */
     width: 90%; /* <--- NEU: Breite für Responsivität */
     margin: 0 auto 40px auto; /* <--- ZENTRIERT DEN GESAMTEN BRAUNEN RAHMEN */
-    text-align: center; /* <--- ZENTRIERT INHALTE (Titel, Links) INNERHALB */
+    /* NUR DIESE ZEILE ÄNDERN: */
+    text-align: center !important; /* <--- ZENTRIERUNG ZWINGEN */
+}
+/* --- CHIRURGISCHER EINGRIFF: ZENTRIERUNG ERZWINGEN --- */
+/* Richtet den Link (a) und das Bild (img) im Hauptcontainer zentriert aus */
+.main-image-container a,
+.main-image-container img {
+    /* Macht die Elemente zu Block-Elementen, die zentriert werden können */
+    display: block !important; 
+    /* Zentriert diese Block-Elemente im Container */
+    margin-left: auto !important; 
+    margin-right: auto !important;
 }
