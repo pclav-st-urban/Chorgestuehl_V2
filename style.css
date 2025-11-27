@@ -267,9 +267,21 @@ body img {
     font-style: italic;
     color: #4e342e; /* Dunklerer Text, passend zum braunen Thema */
 }
-.main-image-container {
-    /* Fügt die Zentrierung des Inhalts hinzu: */
-    text-align: center;
-    /* Optional: stellt sicher, dass der Container selbst mittig ist (falls nötig) */
-    margin: 0 auto; 
+/* --- FIX: Zentriert das anklickbare Bild (Thumbnail) --- */
+/* Richtet den Link (<a>) innerhalb des Containers (.main-image-container) aus */
+.main-image-container a {
+    /* Muss als Inline-Block behandelt werden, um mit text-align zentriert zu werden, 
+       aber trotzdem die Grössenanpassung zuzulassen */
+    display: inline-block; 
+    margin: 0 auto; /* Zentriert den Link selbst, falls der Browser es benötigt */
+}
+
+/* Stellt sicher, dass das Bild selbst im Block sauber zentriert ist */
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #4e342e; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: block; /* MUSS block sein */
+    margin: 0 auto 15px auto; /* ZENTRIERUNG DES BILDES SELBST */
 }
