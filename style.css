@@ -205,22 +205,9 @@ header h2 {
     margin-top: -10px; /* Rücken etwas näher an den Haupttitel */
     margin-bottom: 20px;
 }
- {
-    text-align: center; !important; /* <--- ZENTRIERUNG ZWINGEN */
-    margin-bottom: 40px; 
-    padding: 20px;
-    background-color: #b5886d; /* Hintergrundfarbe des Content-Box */
-    border: 3px solid #4e342e; /* Rand der Content-Box */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Schatten */
-    margin: 0 auto; /* Hilft bei .main-image-containerder Zentrierung des Containers selbst */
-}
+ 
 
- h3 {
-    color: #4e342e; /* Farbe des Titels (Nordflügel/Südflügel) */
-    font-size: 1.8em;
-    margin-bottom: 15px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
+ 
 
 
 /* Stellt sicher, dass das Vollbild beim Anklicken auf Handys/iPads verkleinert wird */
@@ -260,23 +247,10 @@ body img {
     font-style: italic;
     color: #4e342e; /* Dunklerer Text, passend zum braunen Thema */
 }
-/* --- FIX: Zentriert das anklickbare Bild (Thumbnail) --- */
-/* Richtet den Link (<a>) innerhalb des Containers (.main-image-container) aus */
+/* ==================================== */
+/* === KORRIGIERTER BEREICH TITELSEITE (Nord/Südflügel) === */
+/* ==================================== */
 
-
-/* Stellt sicher, dass das Bild selbst im Block sauber zentriert ist */
-.main-image {
-    max-width: 100%;
-    height: auto;
-    border: 2px solid #4e342e; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    display: block; /* MUSS block sein */
-    margin: 0 auto 15px auto; /* ZENTRIERUNG DES BILDES SELBST */
-}
-/* --- FIX: Zentriert das anklickbare Bild (Thumbnail) --- */
-/* Richtet den Link (<a>) innerhalb des Containers (.main-image-container) aus */
- a {
-/* --- FINALE DEFINITION DES HAUPTBILD-CONTAINERS (Nord-/Südflügel) --- */
 .main-image-container {
     /* Ästhetik-Stile */
     margin-bottom: 40px; 
@@ -286,17 +260,32 @@ body img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     
     /* ZENTRIERUNGS-FIXES */
-    max-width: 450px; /* <--- NEU: Container auf realistische Grösse begrenzen */
-    width: 90%; /* <--- NEU: Breite für Responsivität */
-    margin: 0 auto 40px auto; /* <--- ZENTRIERT DEN GESAMTEN BRAUNEN RAHMEN */
-    /* NUR DIESE ZEILE ÄNDERN: */
-    text-align: center !important; /* <--- ZENTRIERUNG ZWINGEN */
+    max-width: 450px; /* Begrenzt die Kachelbreite */
+    width: 90%; 
+    margin: 0 auto 40px auto; /* ZENTRIERT DEN GESAMTEN RAHMEN */
+    text-align: center !important; /* ZWINGT DIE INHALTE ZUR ZENTRIERUNG */
 }
+
+.main-image-container h3 {
+    color: #4e342e; 
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #4e342e; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    display: block; 
+    margin: 0 auto 15px auto; 
+}
+
 /* --- CHIRURGISCHER EINGRIFF: ZENTRIERUNG ERZWINGEN --- */
-/* Richtet den Link (a) und das Bild (img) im Hauptcontainer zentriert aus */
 .main-image-container a,
 .main-image-container img {
-    /* Macht die Elemente zu Block-Elementen, die zentriert werden können */
+    /* Macht die Elemente zu zentrierbaren Blöcken */
     display: block !important; 
     /* Zentriert diese Block-Elemente im Container */
     margin-left: auto !important; 
