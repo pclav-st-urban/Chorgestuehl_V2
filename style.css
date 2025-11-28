@@ -198,13 +198,7 @@ header h2 {
     display: block;
     margin-bottom: 15px;
 }
-/* Styling für die zusätzliche Erläuterung unter dem Titel (z.B. N7B) */
-.detail-subtitle {
-    color: white; /* Schriftfarbe Weiss */
-    font-size: 0.9em; /* Etwas kleinere Schrift */
-    margin-top: -10px; /* Rücken etwas näher an den Haupttitel */
-    margin-bottom: 20px;
-}
+
  /* Stellt sicher, dass das Vollbild beim Anklicken auf Handys/iPads verkleinert wird */
 body img {
     /* Setzt die maximale Breite des Bildes auf 100% des verfügbaren Raumes */
@@ -259,6 +253,12 @@ body img {
     width: 90%; 
     margin: 0 auto 40px auto; /* ZENTRIERT DEN GESAMTEN RAHMEN */
     text-align: center !important; /* ZWINGT DIE INHALTE ZUR ZENTRIERUNG */
+}
+.main-image-container h3 {
+    color: #4e342e; /* Farbe des Titels (Nordflügel/Südflügel) */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 /* Styling für die zusätzliche Erläuterung unter dem Titel (z.B. N7B) */
