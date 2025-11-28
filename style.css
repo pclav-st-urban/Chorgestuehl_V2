@@ -249,26 +249,21 @@ body img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
     
     /* ZENTRIERUNGS-FIXES */
-    max-width: 450px; /* Begrenzt die Kachelbreite */
+    max-width: 450px; 
     width: 90%; 
     margin: 0 auto 40px auto; /* ZENTRIERT DEN GESAMTEN RAHMEN */
     text-align: center !important; /* ZWINGT DIE INHALTE ZUR ZENTRIERUNG */
 }
+
+/* --- TITEL INNERHALB DES CONTAINERS --- */
 .main-image-container h3 {
-    color: #4e342e; /* Farbe des Titels (Nordflügel/Südflügel) */
+    color: #4e342e; 
     font-size: 1.8em;
     margin-bottom: 15px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Styling für die zusätzliche Erläuterung unter dem Titel (z.B. N7B) */
-.detail-subtitle {
-    color: white; /* Schriftfarbe Weiss */
-    font-size: 0.9em; /* Etwas kleinere Schrift */
-    margin-top: -10px; /* Rücken etwas näher an den Haupttitel */
-    margin-bottom: 20px;
-}
-
+/* --- DAS BILD SELBST --- */
 .main-image {
     max-width: 100%;
     height: auto;
@@ -278,12 +273,19 @@ body img {
     margin: 0 auto 15px auto; 
 }
 
-/* --- CHIRURGISCHER EINGRIFF: ZENTRIERUNG ERZWINGEN --- */
+/* --- CHIRURGISCHER EINGRIFF: LINK UND BILD ERZWUNGEN ZENTRIEREN --- */
 .main-image-container a,
 .main-image-container img {
-    /* Macht die Elemente zu zentrierbaren Blöcken */
+    /* Wichtig: Auch das Link-Element zentrieren */
     display: block !important; 
-    /* Zentriert diese Block-Elemente im Container */
     margin-left: auto !important; 
     margin-right: auto !important;
+}
+
+/* --- DIE VERBLEIBENDE DETAIL-SUBTITLE REGEL --- */
+.detail-subtitle {
+    color: white; /* Schriftfarbe Weiss */
+    font-size: 0.9em; 
+    margin-top: -10px; 
+    margin-bottom: 20px;
 }
