@@ -438,3 +438,44 @@ body img {
     margin: 40px auto;
     max-width: 800px;
 }
+/* ==================================== */
+/* === STILE FÜR SPRUNGMARKEN (Inhaltsverzeichnis) === */
+/* ==================================== */
+
+.sprungmarken {
+    text-align: center;
+    margin-top: -20px; /* Zieht es näher an den Header */
+    margin-bottom: 30px; 
+}
+
+.sprungmarken p {
+    font-weight: bold;
+    color: #4e342e;
+    margin-bottom: 5px;
+}
+
+.sprungmarken ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap; /* Erlaubt den Umbruch auf Handys */
+    display: flex; /* Für die flexible Anordnung */
+    justify-content: center; /* Zentriert die Links */
+}
+
+.sprungmarken li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.sprungmarken a {
+    color: #4e342e; /* Dunkelbraun */
+    font-weight: normal; /* Keine unnötige Fettschrift */
+    text-decoration: underline;
+    font-size: 0.95em;
+    transition: color 0.3s;
+}
+
+.sprungmarken a:hover {
+    color: #916341; /* Hellbraun beim Hover */
+}
