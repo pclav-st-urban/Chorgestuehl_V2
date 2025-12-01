@@ -448,12 +448,6 @@ body img {
     margin-bottom: 30px; 
 }
 
-.sprungmarken p {
-    font-weight: bold;
-    color: #4e342e;
-    margin-bottom: 5px;
-}
-
 .sprungmarken ul {
     list-style: none;
     padding: 0;
@@ -462,20 +456,21 @@ body img {
     display: flex; /* Für die flexible Anordnung */
     justify-content: center; /* Zentriert die Links */
 }
-
 .sprungmarken li {
-    display: inline;
-    margin: 0 10px;
+    display: inline-block; /* Muss inline-block sein, damit Padding und Margin funktionieren */
+    margin: 5px 10px; /* Etwas vertikalen Abstand hinzufügen */
 }
 
 .sprungmarken a {
-    color: #4e342e; /* Dunkelbraun */
-    font-weight: normal; /* Keine unnötige Fettschrift */
-    text-decoration: underline;
+    color: white; /* Schrift auf Weiß ändern */
+    background-color: #795548; /* Hintergrundfarbe hinzufügen (wie die Hauptnavigation) */
+    padding: 5px 10px; /* Etwas Platz für die "Schaltfläche" */
+    border-radius: 5px; /* Abgerundete Ecken */
+    text-decoration: none; /* Unterstreichung entfernen */
+    font-weight: bold;
     font-size: 0.95em;
-    transition: color 0.3s;
+    /* ... Rest der Regeln ... */
 }
-
 .sprungmarken a:hover {
     color: #916341; /* Hellbraun beim Hover */
 }
