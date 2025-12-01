@@ -4,98 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>N1A - Die Taufe Christi durch Johannes</title>
-    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
     
     <style>
-        /* Spezifische Schriftgrößen und Layout für die Relief-Seite */
+        /* CHIRURGISCHER STIL-FIX FÜR DETAILSEITEN */
         
-        .content-box {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #b5886d; 
-            border: 3px solid #4e342e; /* Rahmen um den Inhalt */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            text-align: left; /* Text linksbündig */
-        }
-        
+        /* 1. KORREKTUR: Erzwingt Block-Status und Zentrierung für das Bild */
         .relief-image {
+            display: block !important;
+            margin: 20px auto !important;
             max-width: 100%;
             height: auto;
-            border: 5px solid #916341; /* Rahmen um das Bild */
-            margin: 20px auto; /* Zentrieren und Abstand */
-            display: block; /* Wichtig für Zentrierung */
+            border: 5px solid #916341; 
             cursor: pointer;
             transition: border-color 0.3s;
         }
 
-        .relief-image:hover {
-             border-color: #4e342e;
-        }
-
-        h2 {
-            font-size: 1.8em; /* Grössere Überschrift */
-            margin-top: 0;
-            color: #4e342e;
-            border-bottom: 2px solid #916341; 
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+        /* 2. KORREKTUR: Erzwingt Block-Status und Zentrierung für Link-Elemente (Bildlink und Textlink) */
+        .content-box a {
+            display: block !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
         }
         
-        p {
-            font-size: 1.1em; /* Grössere Textschrift */
-            line-height: 1.5;
-            color: #4e342e;
-        }
-
+        /* 3. KORREKTUR: Zentriert den Text-Link-Text selbst */
         .text-link {
-            text-decoration: none;
-            color: #4e342e;
-            font-weight: bold;
-            font-size: 1.2em; /* Etwas grösser, um die Klickfläche hervorzuheben */
-            display: block; 
+            text-align: center !important; 
+            max-width: 350px; /* Begrenzt die Breite des Text-Links */
             padding: 10px 0;
-            text-align: center; /* Zentrierung für den Link */
             border: 2px solid #916341;
             background-color: #f0ebe8;
             border-radius: 4px;
             margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .text-link:hover {
-            background-color: #d8c7c0;
-        }
-        
-        /* Korrektur für den Zurück-Pfeil */
-        .zurueck-link {
-            font-weight: bold;
             text-decoration: none;
             color: #4e342e;
-            display: block;
-            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        
+        /* 4. BEHEBUNG DES KONFLIKTS: Stellt sicher, dass die Box den Inhalt zentrieren KANN */
+        .content-box {
+             text-align: center; /* Setzt die Textausrichtung in der Box auf Zentriert */
+             margin: 40px auto;
+             max-width: 800px;
         }
 
     </style>
 </head>
-<body>
-
-    <header>
-        <h1>Kompartiment N1A: Die Taufe Christi durch Johannes</h1>
-    </header>
-
-    <div class="content-box">
-        
-        <a href="nord.html" class="zurueck-link">← Zurück zur Nordflügel-Übersicht</a>
-
-        <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-20_1.tif/lossy-page1-5400px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-20_1.tif.jpg">
-            <img class="relief-image" 
-                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-20_1.tif/lossy-page1-500px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-20_1.tif.jpg" 
-                 alt="Die Taufe Christi durch Johannes - Zum Vergrössern anklicken">
-        </a>
-        
-        <a class="text-link" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-20_1.tif/lossy-page1-5400px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-20_1.tif.jpg">
-            Zum Vollbild mit Zoom-Funktion
-        </a>
         
 
     </div>
