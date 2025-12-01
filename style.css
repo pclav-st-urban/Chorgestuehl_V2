@@ -244,10 +244,20 @@ body img {
 
 /* Stil für die Links, die zentriert werden sollen */
 .link-zentriert {
-    text-align: center !important; /* Zentriert nur diesen Block */
-    margin: 15px auto;
+    /* 3. Zentriert die <p>-Elemente, die die Links enthalten */
+    text-align: center !important;
+    margin: 15px auto; 
+    
+    /* NEU & WICHTIG: Erzwingt, dass der INHALT NICHT umgebrochen wird! */
+    white-space: nowrap !important; 
+    overflow: hidden; /* Versteckt Reste, falls es doch überläuft */
 }
 
+/* Wir können die span-Regel jetzt entfernen oder vereinfachen, aber lassen wir sie zur Sicherheit */
+/* .link-zentriert span { 
+    white-space: nowrap !important;
+    display: inline-block;
+} */
 /* Hält die Klammern und den Link auf einer Zeile */
 .link-zentriert span {
     white-space: nowrap !important; /* Verhindert Trennung von Klammern und Link */
