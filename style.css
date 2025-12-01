@@ -206,14 +206,6 @@ body img {
     /* Stellt sicher, dass die Höhe proportional angepasst wird */
     height: auto; 
 }
-/* Erzwungene Grössenanpassung für Vollbilder auf Tablets/Handys */
-body img {
-    max-width: 100% !important; /* MUSS alle anderen Breiten überschreiben */
-    height: auto !important;
-    /* optional zur Sicherheit: */
-    margin-left: 0 !important; 
-    padding-left: 0 !important;
-}
 /* Zentriert alle Bilder auf der Detailseite, indem der Container zentriert wird */
 .content-box div {
     text-align: center; /* Zentriert inline-Elemente wie Bilder */
@@ -226,31 +218,40 @@ body img {
 }
 /* Stil für den erklärenden Textblock zwischen den Kacheln */
 .separator-text-block {
-    width: 100%; /* Wichtig: Sorgt dafür, dass der Text die gesamte Breite der Container einnimmt */
-    text-align: center;
-    margin: 30px 0; /* Fügt einen vertikalen Abstand oben und unten hinzu */
-    padding: 10px 20px;
+    width: 100%; 
+    max-width: 800px; /* Begrenzt die Breite auf maximal 800px */
+    margin: 30px auto; /* Zentriert den gesamten Block */
+    padding: 20px;
     box-sizing: border-box;
-    /* Optionale Stile für die Ästhetik */
+    
+    /* WICHTIG: Text linksbündig ausrichten, um Silbentrennung im Haupttext zu verhindern */
+    text-align: left; 
+    
     font-size: 1.1em;
     font-style: italic;
-    color: #4e342e; /* Dunklerer Text, passend zum braunen Thema */
+    color: #4e342e;
+}
+
 .separator-text-block p {
-    /* 2. Allgemeine Textformatierung */
     font-size: 1.1em;
     line-height: 1.6;
     color: #4e342e;
     
-    /* NEU: Silbentrennung im normalen Text verbieten */
+    /* Erzwungener Fix gegen Silbentrennung für den Haupttext (Salz-burg) */
     hyphens: none !important; 
     word-break: normal !important; 
 }
 
-/* NEU: Hält die Klammern und den Link auf einer Zeile */
-.link-zentriert span {
-    white-space: nowrap !important; /* Verhindert Trennung */
-    display: inline-block; /* Muss ein Block sein, um nowrap anzuwenden */
+/* Stil für die Links, die zentriert werden sollen */
+.link-zentriert {
+    text-align: center !important; /* Zentriert nur diesen Block */
+    margin: 15px auto;
 }
+
+/* Hält die Klammern und den Link auf einer Zeile */
+.link-zentriert span {
+    white-space: nowrap !important; /* Verhindert Trennung von Klammern und Link */
+    display: inline-block; 
 }
 /* ==================================== */
 /* === KORRIGIERTER BEREICH TITELSEITE (Nord/Südflügel) === */
@@ -304,13 +305,6 @@ body img {
     font-size: 0.9em; 
     margin-top: -10px; 
     margin-bottom: 20px;
-}
-/* --- DIE VERBLEIBENDE DETAIL-SUBTITLE REGEL --- */
-.detail-subtitle {
-    color: white; /* Schriftfarbe Weiss */
-    font-size: 0.9em; 
-    margin-top: -10px; 
-    margin-bottom: 20px;
 }
 
 /* ==================================== */
