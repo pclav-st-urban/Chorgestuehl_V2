@@ -444,33 +444,41 @@ body img {
 
 .sprungmarken {
     text-align: center;
-    margin-top: -20px; /* Zieht es näher an den Header */
+    margin-top: -20px; 
     margin-bottom: 30px; 
 }
+/* KEINE REGEL FÜR .sprungmarken p MEHR HIER! */
 
 .sprungmarken ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap; /* Erlaubt den Umbruch auf Handys */
-    display: flex; /* Für die flexible Anordnung */
-    justify-content: center; /* Zentriert die Links */
+    flex-wrap: wrap; 
+    display: flex; 
+    justify-content: center; 
 }
+
 .sprungmarken li {
-    display: inline-block; /* Muss inline-block sein, damit Padding und Margin funktionieren */
+    /* Macht die Box um den Link klickbar */
+    display: inline-block;
     margin: 5px 10px; /* Etwas vertikalen Abstand hinzufügen */
 }
 
 .sprungmarken a {
-    color: white; /* Schrift auf Weiß ändern */
-    background-color: #795548; /* Hintergrundfarbe hinzufügen (wie die Hauptnavigation) */
-    padding: 5px 10px; /* Etwas Platz für die "Schaltfläche" */
-    border-radius: 5px; /* Abgerundete Ecken */
-    text-decoration: none; /* Unterstreichung entfernen */
+    /* FENSTER-SCHALTFLÄCHEN-STIL ERZWINGEN */
+    display: block !important; /* MUSS block sein, um padding zu akzeptieren */
+    color: white !important; /* WICHTIG: Überschreibt jede andere Farbe */
+    background-color: #795548; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    text-decoration: none !important; /* Unterstreichung entfernen */
     font-weight: bold;
     font-size: 0.95em;
-    /* ... Rest der Regeln ... */
+    transition: background-color 0.3s;
+    border: 1px solid #4e342e;
 }
+
 .sprungmarken a:hover {
-    color: #916341; /* Hellbraun beim Hover */
+    background-color: #4e342e; /* Dunklere Farbe beim Hover */
+    color: white !important;
 }
