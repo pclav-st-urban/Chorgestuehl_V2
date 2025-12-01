@@ -289,6 +289,50 @@ body img {
     margin-top: -10px; 
     margin-bottom: 20px;
 }
+/* --- DIE VERBLEIBENDE DETAIL-SUBTITLE REGEL --- */
+.detail-subtitle {
+    color: white; /* Schriftfarbe Weiss */
+    font-size: 0.9em; 
+    margin-top: -10px; 
+    margin-bottom: 20px;
+}
+
+/* ==================================== */
+/* === STILE FÜR SCHEMATISCHE ÜBERSICHT (index.html) === */
+/* ==================================== */
+/* <<<--- FÜGEN SIE DEN NEUEN CODE HIER EIN! */
+.schema-container {
+    /* Macht den Container zentrierbar und gibt ihm etwas Abstand */
+    max-width: 900px; 
+    width: 90%;
+    margin: 40px auto 40px auto; 
+    text-align: center;
+    padding: 20px;
+}
+
+.schema-container h3 {
+    font-size: 1.4em;
+    color: #4e342e;
+    margin-bottom: 20px;
+}
+
+.schema-image {
+    /* Das Bild selbst zentrieren und die Grösse begrenzen */
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #4e342e; /* Ein leichter Rahmen, um das Schema hervorzuheben */
+    display: block;
+    margin: 0 auto;
+}
+/* >>>--- BIS HIERHIN! */
+
+/* ==================================== */
+/* === ENDGÜLTIGER CHIRURGISCHER ZENTRIERUNGS-FIX FÜR ALLE BILDER === */
+/* ==================================== */
+.relief-image {
+    /* ... (Dieser Fix bleibt als letzter Block) ... */
+}
+/* ... Rest der Datei ... */
 /* ==================================== */
 /* === ENDGÜLTIGER CHIRURGISCHER ZENTRIERUNGS-FIX FÜR ALLE BILDER === */
 /* ==================================== */
