@@ -311,18 +311,19 @@ body img {
 }
 
 .schema-container h3 {
-    font-size: 1.4em;
+    font-size: 1.2em; /* VON 1.4em AUF 1.2em GEÄNDERT */
     color: #4e342e;
     margin-bottom: 20px;
 }
 
 .schema-image {
-    /* Das Bild selbst zentrieren und die Grösse begrenzen */
     max-width: 100%;
     height: auto;
-    border: 1px solid #4e342e; /* Ein leichter Rahmen, um das Schema hervorzuheben */
+    border: 1px solid #4e342e; 
     display: block;
     margin: 0 auto;
+    background-color: white; /* NEU: Hintergrund für den Alt-Text */
+    padding: 5px; /* NEU: Etwas Abstand vom Rahmen */
 }
 /* >>>--- BIS HIERHIN! */
 
