@@ -326,6 +326,46 @@ body img {
     padding: 5px; /* NEU: Etwas Abstand vom Rahmen */
 }
 /* >>>--- BIS HIERHIN! */
+/* ==================================== */
+/* === KORREKTUR FÜR SEPARATOR TEXT BLOCK === */
+/* ==================================== */
+
+.separator-text-block {
+    max-width: 800px; /* Optional: Text nicht zu breit machen */
+    margin: 40px auto;
+    padding: 20px;
+    
+    /* 1. Trennstriche und Blocksatz entfernen: Text linksbündig */
+    text-align: left; 
+}
+
+.separator-text-block p {
+    /* 2. Allgemeine Textformatierung */
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #4e342e;
+}
+
+.link-zentriert {
+    /* 3. Zentriert die <p>-Elemente, die die Links enthalten */
+    text-align: center !important;
+    margin: 15px auto; /* Etwas Abstand zu den umliegenden Absätzen */
+}
+
+.link-zentriert a {
+    /* 4. Link-Stil: Keine Silbentrennung */
+    text-decoration: underline;
+    color: #916341;
+    font-weight: bold;
+    display: inline-block; /* Verhindert Silbentrennung */
+    white-space: nowrap; /* WICHTIG: Verhindert den Trennstrich (z.B. Ab-bey) */
+}
+
+/* 5. Nur für den Quellenlink, um die Klammern nicht hervorzuheben */
+.quelle a {
+    font-weight: normal; 
+    font-size: 0.9em;
+}
 
 /* ==================================== */
 /* === ENDGÜLTIGER CHIRURGISCHER ZENTRIERUNGS-FIX FÜR ALLE BILDER === */
