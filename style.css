@@ -305,7 +305,7 @@ body img {
     /* Macht den Container zentrierbar und gibt ihm etwas Abstand */
     max-width: 900px; 
     width: 90%;
-    margin: 40px auto 40px auto; 
+    margin: 20px auto 20px auto; 
     text-align: center;
     padding: 20px;
 }
