@@ -482,3 +482,18 @@ body img {
     background-color: #4e342e; /* Dunklere Farbe beim Hover */
     color: white !important;
 }
+/* Stil für fehlende, nicht-klickbare Elemente */
+.fehlend {
+    /* Kopiert den Grundstil der Links */
+    display: block; 
+    padding: 10px 20px;
+    font-size: 1.2em; 
+    font-weight: bold; 
+    border-radius: 5px;
+    border: 2px solid #a1a1a1; /* Neutraler Rand */
+    
+    /* Farbe, die Nicht-Klickbarkeit signalisiert */
+    background-color: #d8d8d8; /* Hellgrauer Hintergrund */
+    color: #4e4e4e; /* Dunkelgraue Schrift */
+    cursor: default; /* Zeigt den Standard-Mauszeiger (kein Link) */
+}
