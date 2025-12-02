@@ -484,16 +484,18 @@ body img {
 }
 /* Stil für fehlende, nicht-klickbare Elemente */
 .fehlend {
-    /* Kopiert den Grundstil der Links */
+    /* **WICHTIG:** Übernimmt exakt die Grössen/Abstände der anderen Schaltflächen (vom nav a) */
     display: block; 
     padding: 10px 20px;
-    font-size: 1.2em; 
-    font-weight: bold; 
+    font-size: 1.2em; /* Gleich wie die Links */
+    font-weight: bold; /* Gleich wie die Links */
     border-radius: 5px;
-    border: 2px solid #a1a1a1; /* Neutraler Rand */
+    
+    /* Rahmen: Muss dieselbe Dicke haben wie die Links (2px solid #4e342e) */
+    border: 2px solid #a1a1a1; 
     
     /* Farbe, die Nicht-Klickbarkeit signalisiert */
     background-color: #d8d8d8; /* Hellgrauer Hintergrund */
     color: #4e4e4e; /* Dunkelgraue Schrift */
-    cursor: default; /* Zeigt den Standard-Mauszeiger (kein Link) */
+    cursor: default;
 }
