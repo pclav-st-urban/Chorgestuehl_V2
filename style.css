@@ -482,20 +482,22 @@ body img {
     background-color: #4e342e; /* Dunklere Farbe beim Hover */
     color: white !important;
 }
-/* Stil für fehlende, nicht-klickbare Elemente */
+/* Stil für fehlende, nicht-klickbare Elemente (Mit höchster Priorität) */
 .fehlend {
-    /* **WICHTIG:** Übernimmt exakt die Grössen/Abstände der anderen Schaltflächen (vom nav a) */
-    display: block; 
-    padding: 10px 20px;
-    font-size: 1.2em; /* Gleich wie die Links */
-    font-weight: bold; /* Gleich wie die Links */
-    border-radius: 5px;
+    /* MUSS auf Block stehen, damit Padding und Abmessungen funktionieren */
+    display: block !important; 
     
-    /* Rahmen: Muss dieselbe Dicke haben wie die Links (2px solid #4e342e) */
-    border: 2px solid #a1a1a1; 
+    /* ABSTAND & GRÖSSE */
+    padding: 10px 20px !important; 
+    font-size: 1.2em !important; /* MUSS die korrekte Schriftgröße erzwingen */
+    font-weight: bold !important; 
+    border-radius: 5px !important;
     
-    /* Farbe, die Nicht-Klickbarkeit signalisiert */
-    background-color: #d8d8d8; /* Hellgrauer Hintergrund */
-    color: #4e4e4e; /* Dunkelgraue Schrift */
-    cursor: default;
+    /* RAHMEN */
+    border: 2px solid #a1a1a1 !important; /* Erzwingt das korrekte Rahmenmaß */
+    
+    /* FARBE */
+    background-color: #d8d8d8 !important; 
+    color: #4e4e4e !important; 
+    cursor: default !important;
 }
