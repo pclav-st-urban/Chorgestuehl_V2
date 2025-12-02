@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
+        /* Allgemeine Box für den Inhalt */
         .content-box {
             max-width: 800px;
             margin: 40px auto;
@@ -17,6 +18,7 @@
             text-align: left; 
         }
         
+        /* Stil für den Untertitel */
         .detail-subtitle {
             font-size: 0.9em; 
             font-style: italic;
@@ -25,11 +27,43 @@
             display: block;
         }
 
-       /* Spezifische Korrektur für S01C */
-header p.untertitel-s01c-fix {
-    color: white !important; /* MUSS funktionieren */
-    line-height: 1.4 !important; /* Optional: Verbessert die Lesbarkeit langer Zeilen */
-}
+        /* 🚨 FESTER FIX: Zielt auf die vorhandene Klasse im Header und erzwingt Weiss */
+        header p.detail-subtitle {
+            color: white !important;
+        }
+        
+        /* Stil für das Bild */
+        .relief-image {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #4e342e;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Stil für den Zurück-Link */
+        .zurueck-link {
+            color: #4e342e;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .zurueck-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Stil für den Vollbild-Link */
+        .text-link {
+            color: #4e342e;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            margin-top: 5px;
+        }
+        .text-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -45,8 +79,8 @@ header p.untertitel-s01c-fix {
         <div style="text-align: center;">
             <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-4_3.tif/lossy-page1-5400px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-4_3.tif.jpg">
                 <img class="relief-image" 
-                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-4_3.tif/lossy-page1-500px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-4_3.tif.jpg" 
-                     alt="Der Frondienst Israels - Zum Vergrössern anklicken">
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-4_3.tif/lossy-page1-500px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-4_3.tif.jpg" 
+                    alt="Der Frondienst Israels - Zum Vergrössern anklicken">
             </a>
             
             <a class="text-link" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-4_3.tif/lossy-page1-5400px-CH-NB_Saint_Urban%27s_Abbey_EAD-DRESS-4_3.tif.jpg">
