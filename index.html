@@ -7,37 +7,42 @@
     <link rel="stylesheet" href="style.css">
     
     <style>
-        /* Temporäre Anpassung der Navigation für die sechs Elemente (für bessere Übersicht) */
-        nav ul {
-            display: flex;
-            flex-wrap: wrap; /* Erlaubt Umbruch auf kleineren Bildschirmen */
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 20px 0;
-        }
+    /* Temporäre Anpassung der Navigation für die sechs Elemente (für bessere Übersicht) */
+    nav ul {
+        display: flex;
+        flex-wrap: wrap; /* Erlaubt Umbruch auf kleineren Bildschirmen */
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
 
-        nav li {
-            margin: 5px 10px;
-        }
+    nav li {
+        margin: 5px 10px;
+    }
 
-        nav a {
-            display: block;
-            padding: 10px 20px;
-            background-color: #795548; /* Dunkle Brauntönung */
-            color: white; /* Weisse Schrift */
-            text-decoration: none;
-            font-size: 1.2em; /* Ausgewogene Grösse */
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            border: 2px solid #4e342e;
-        }
+    nav a {
+        display: block;
+        padding: 10px 20px;
+        background-color: #795548; /* Dunkle Brauntönung */
+        color: white; /* Weisse Schrift */
+        text-decoration: none;
+        font-size: 1.2em; /* Ausgewogene Grösse */
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        border: 2px solid #4e342e;
+    }
 
-        nav a:hover {
-            background-color: #4e342e; /* Dunklere Farbe beim Hover */
-        }
-    </style>
+    nav a:hover {
+        background-color: #4e342e; /* Dunklere Farbe beim Hover */
+    }
+
+    /* NEUE REGEL: Erhöht die Schriftgröße nur für die Absätze (<p>) im Anleitungstext */
+    #anleitung p {
+        font-size: 1.1em; /* Passen Sie diesen Wert (z.B. 1.05em, 1.1em, 1.2em) nach Bedarf an */
+    }
+</style>
     
 </head>
 <body>
